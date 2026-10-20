@@ -1,1 +1,0 @@
-# sma-rajaei.github.io
