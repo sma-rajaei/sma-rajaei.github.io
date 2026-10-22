@@ -5,11 +5,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title> Seyed Mohammad Amin Rajaei | Computer Vision</title>
+  <title>Seyed Mohammad Amin Rajaei | Computer Vision</title>
   <meta name="description"
-        content="Computer Engineering student interested in Computer Vision and Deep Learning.">
+        content="Computer Engineering student at Isfahan University of Technology interested in Computer Vision, Deep Learning, and Machine Learning.">
 
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <style>
+    .education-heading,
+    .education-details.education-degree-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 20px;
+    }
+
+    .education-heading {
+      margin-bottom: 4px;
+    }
+
+    .education-university {
+      font-size: 1.08em;
+      font-weight: 700;
+    }
+
+    .education-location,
+    .education-date {
+      flex-shrink: 0;
+      text-align: right;
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    .education-degree {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .education-details {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2px;
+    }
+
+    .education-details p {
+      margin: 0;
+    }
+
+    .project-category {
+      margin-top: 30px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e6e6e6;
+      font-size: 1.2em;
+    }
+
+    .project {
+      margin-top: 18px;
+    }
+
+    .project h4 {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+
+    .project p {
+      margin-top: 6px;
+      margin-bottom: 10px;
+    }
+
+    .project-results {
+      font-size: 0.95em;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .education-heading,
+      .education-details.education-degree-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+      }
+
+      .education-location,
+      .education-date {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -32,54 +121,250 @@
       <div class="social-links">
         <a href="https://github.com/sma-rajaei/">GitHub</a>
         <a href="https://www.linkedin.com/in/seyed-mohammad-amin-rajaei-94ab9a420/">LinkedIn</a>
-        <a href="mailto:rajaee.m@ec.iut.ac.ir
-">Email</a>
+        <a href="mailto:rajaee.m@ec.iut.ac.ir">Email</a>
       </div>
     </section>
 
     <section id="about" class="content-section">
       <h2>About</h2>
       <p>
-I am a fourth-year Computer Engineering student at Isfahan University of Technology with a strong interest in Artificial Intelligence, particularly Computer Vision, Deep Learning, Machine Learning and other related areas.
+        I am a fourth-year Computer Engineering student at Isfahan
+        University of Technology with a strong interest in Artificial
+        Intelligence, particularly Computer Vision, Deep Learning,
+        Machine Learning.
 
-
-
-During my undergraduate studies, I have built a solid foundation in Machine Learning and Deep Learning through academic coursework and strengthened my understanding by implementing practical projects. I enjoy exploring AI concepts through hands-on experimentation, model development, and analyzing real-world applications.
-
-Currently, I am focusing on advancing my skills in Computer Vision through practical research-oriented projects while continuing to explore broader areas of AI.
+        During my undergraduate studies, I have built a solid foundation
+        in Machine Learning and Deep Learning through academic coursework.I enjoy exploring AI concepts through hands-on
+        experimentation, model development, and analyzing real-world
+        applications.
+        
+        Currently, I am focusing on advancing my skills in Computer Vision
+        through practical research-oriented projects while continuing to
+        explore broader areas of AI.
       </p>
     </section>
 
     <section id="education" class="content-section">
       <h2>Education</h2>
-      <article>
-        <h3>B.Sc. in Computer Engineering</h3>
-        <p>Isfahan University of Technology</p>
-        <p>Expected graduation: 2027</p>
+
+      <article class="education-entry">
+        <div class="education-heading">
+          <strong class="education-university">
+            Isfahan University of Technology (IUT)
+          </strong>
+
+          <span class="education-location">Isfahan, Iran</span>
+        </div>
+
+        <div class="education-heading education-details-degree-row">
+          <p class="education-degree">
+            Bachelor of Science in Computer Engineering
+          </p>
+
+          <span class="education-date">2023 – Present</span>
+        </div>
+
       </article>
     </section>
 
     <section id="research" class="content-section">
       <h2>Research Interests</h2>
       <ul>
-        <li>Object Detection in Aerial Images</li>
-        <li>Semantic and Instance Segmentation</li>
-        <li>Vision Transformers and Visual Representation Learning</li>
-        <li>Deep Learning for Computer Vision</li>
+        <li>Image Segmentation</li>
+        <li>Object Detection</li>
+        <li>Vision Transformers (ViT) and Visual Representation Learning</li>
+        <li>Vision Language Models (VLM) </li>
+        <li>Deep Learning</li>
+        <li>Machine Learning</li>
       </ul>
     </section>
 
     <section id="projects" class="content-section">
       <h2>Projects</h2>
 
+      <h3 class="project-category">Advanced Computer Vision</h3>
+
       <article class="project">
-        <h3>Retinal OCT Image Classification with Vision Transformers</h3>
+        <h4>
+          <a href="https://github.com/sma-rajaei/Vision-Transformer-On-Retinal-OCT-Dataset"
+             target="_blank" rel="noopener noreferrer">
+            Vision Transformer Model from Scratch for Retinal OCT Disease Classification
+          </a>
+        </h4>
+
         <p>
-          A deep learning project exploring Vision Transformers
-          for medical image classification.
+          Developed a Vision Transformer (ViT) model from scratch for
+          retinal OCT image classification, implementing patch embeddings,
+          multi-head self-attention, Transformer encoder blocks, and an
+          MLP classification head.
         </p>
-        <a href="YOUR_OCT_GITHUB_URL">More information on the GitHub Repository →</a>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/Vision-Transformer-On-Retinal-OCT-Dataset"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
       </article>
+
+
+      <h3 class="project-category">Machine Learning &amp; Deep Learning</h3>
+
+     <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/MNIST-Handwritten-Digit-Classification"
+             target="_blank" rel="noopener noreferrer">
+            CNN vs. Fully Connected Networks for Handwritten Digit Classification on MNIST
+          </a>
+        </h4>
+
+        <p>
+          Compared a convolutional neural network (CNN) with a fully
+          connected neural network for handwritten digit classification
+          on the MNIST dataset, exploring the role of convolutional
+          architectures in computer vision.
+        </p>
+
+        <p class="project-results">
+          <strong>Test Accuracy:</strong>
+          CNN: 99.63% | Fully Connected Network: 98.23%
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/MNIST-Handwritten-Digit-Classification"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/Titanic-Classification"
+             target="_blank" rel="noopener noreferrer">
+            Titanic Survival Prediction: Logistic Regression vs. Tree-Based Models
+          </a>
+        </h4>
+
+        <p>
+          Developed a machine learning pipeline involving data
+          visualization, preprocessing, feature engineering,
+          hyperparameter optimization, model evaluation, and analysis.
+          Compared Logistic Regression, Decision Tree, and Random Forest
+          models for passenger survival prediction.
+        </p>
+
+        <p class="project-results">
+          <strong>Test Accuracy:</strong>
+          Logistic Regression: 83.2% | Decision Tree: 82.1% |
+          Random Forest: 81.5%
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/Titanic-Classification"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/SMS-Spam-Detection-with-NLP"
+             target="_blank" rel="noopener noreferrer">
+            SMS Spam Detection with NLP: Comparing Classical ML Classifiers
+          </a>
+        </h4>
+
+        <p>
+          Developed an NLP-based machine learning pipeline for SMS spam
+          classification and compared three classical classifiers.
+        </p>
+
+        <p class="project-results">
+          <strong>Test Accuracy:</strong>
+          Logistic Regression: 97.3% | Decision Tree: 94.1% |
+          Random Forest: 90.9%
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/SMS-Spam-Detection-with-NLP"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+
+      <h3 class="project-category">University Projects in Programming &amp; Computer Architecture</h3>
+
+      <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/PlantsVsZombies"
+             target="_blank" rel="noopener noreferrer">
+ Plants vs. Zombies online multiplayer game in C++ using Qt Framework
+          </a>
+        </h4>
+
+        <p>
+          Developed an online multiplayer game using C++ and the Qt
+          framework as the final project for the Advanced Programming
+          course at Isfahan University of Technology.
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/PlantsVsZombies"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/RiskV"
+             target="_blank" rel="noopener noreferrer">
+            RISC-V Architecture Simulator and Assembler
+          </a>
+        </h4>
+
+        <p>
+          Implemented a RISC-V architecture simulator and assembler
+          as the final project for the Computer Architecture and
+          Organization course at Isfahan University of Technology.
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/RiskV"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+
+      <article class="project">
+        <h4>
+          <a href="https://github.com/sma-rajaei/SpaceWar"
+             target="_blank" rel="noopener noreferrer">
+            Space War — Local Multiplayer Game in C
+          </a>
+        </h4>
+
+        <p>
+          Developed a command-line, local multiplayer combat game in C
+          as the final project for the Basic Programming course at
+          Isfahan University of Technology.
+        </p>
+
+        <a class="project-link"
+           href="https://github.com/sma-rajaei/SpaceWar"
+           target="_blank" rel="noopener noreferrer">
+          View on GitHub →
+        </a>
+      </article>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact</h2>
+      <p>
+        For academic and research discussions:
+      </p>
+      <a href="mailto:rajaee.m@ec.iut.ac.ir">
+        rajaee.m@ec.iut.ac.ir
+      </a>
     </section>
 
     <footer class="site-footer">
