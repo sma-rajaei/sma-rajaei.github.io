@@ -114,6 +114,7 @@
       <a href="#education">Education</a>
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Technical Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -366,6 +367,18 @@
       </article>
     </section>
 
+    <section id="skills" class="content-section">
+      <h2>Technical Skills</h2>
+      <p>
+        <strong>Programming:</strong> Python, C++<br>
+        <strong>ML &amp; DL Frameworks &amp; Libraries:</strong> PyTorch, TensorFlow, scikit-learn, NumPy, Pandas, Matplotlib, seaborn<br>
+        <strong>Computer Vision:</strong> Image Classification, Object Detection (YOLO, Faster R-CNN), Vision Transformers (ViT), Semantic &amp; Instance Segmentation, Image Preprocessing, Data Augmentation, Model Evaluation (mAP, IoU, Dice Score, mIoU)<br>
+        <strong>Deep Learning:</strong> Neural Networks, CNNs, Transfer Learning, Fine-tuning, Feature Extraction, Model Regularization (Dropout, Weight Decay, Batch Normalization), Learning Rate Scheduling and Optimization<br>
+        <strong>Machine Learning:</strong> Data preprocessing, Feature engineering, Model evaluation<br>
+        <strong>Tools:</strong> Git &amp; GitHub, Linux, n8n
+      </p>
+    </section>
+
     <section id="contact" class="content-section">
       <h2>Contact</h2>
       <p>
@@ -385,7 +398,7 @@
     /* Show one section at a time, driven by the URL hash (#about, #projects, ...).
        Home (#home or no hash) shows the name/links header together with About. */
     (function () {
-      var tabIds = ['about', 'education', 'research', 'projects', 'contact'];
+      var tabIds = ['about', 'education', 'research', 'projects', 'skills', 'contact'];
       var hero = document.getElementById('home');
       var sections = tabIds.map(function (id) { return document.getElementById(id); });
       var navLinks = document.querySelectorAll('.navigation a');
